@@ -1,0 +1,255 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 101600 0 0))
+   (shape (circ I1 101600 0 0))
+   (shape (circ I2 101600 0 0))
+   (shape (circ I3 101600 0 0))
+   (shape (circ I4 101600 0 0))
+   (shape (circ I5 101600 0 0))
+   (shape (circ I6 101600 0 0))
+   (shape (circ I7 101600 0 0))
+   (shape (circ I8 101600 0 0))
+   (shape (circ I9 101600 0 0))
+   (shape (circ I10 101600 0 0))
+   (shape (circ I11 101600 0 0))
+   (shape (circ I12 101600 0 0))
+   (shape (circ I13 101600 0 0))
+   (shape (circ I14 101600 0 0))
+   (shape (circ BOT 101600 0 0))
+  )
+  )
+  (network_out
+   (Net 3.3V 
+   (rule
+   )
+   (wire (path BOT 76200  -5500000 5546000 -5892800 5546000 -5892800 5994400
+     -5080000 5994400 -5080000 1930400 -3079807 1930400 -3079807 3042000
+     -2650000 3042000)
+    (connect (terminal pin SIM1-1) (terminal pin J1-2))
+   )
+   )
+   (Net 5V 
+   (rule
+   )
+   (wire (path BOT 76200  -6502400 5283200 -7315200 5283200 -7315200 6908800
+     -2235200 6908800 -2235200 5438000 -2550000 5438000)
+    (connect (terminal wire) (terminal pin J4-3))
+   )
+   (wire (path BOT 76200  -5500000 3006000 -6502400 3006000 -6502400 5283200)
+    (connect (terminal pin SIM1-11) (terminal wire))
+   )
+   (wire (path BOT 76200  -6750000 6250000 -6502400 6250000 -6502400 5283200)
+    (connect (terminal pin J5-0) (terminal wire))
+   )
+   )
+   (Net A0 
+   (rule
+   )
+   (wire (path BOT 76200  -5283200 1727200 -5283200 -850000 1800000 -850000)
+    (connect (terminal wire) (terminal pin "BATTERY 3.7V +"-0))
+   )
+   (wire (path BOT 76200  -5500000 5038000 -5283200 5038000 -5283200 1727200)
+    (connect (terminal pin SIM1-3) (terminal wire))
+   )
+   (wire (path BOT 76200  -5283200 1727200 -5486400 1727200 -5486400 1700000
+     -6800000 1700000)
+    (connect (terminal wire) (terminal pin BAT+-0))
+   )
+   )
+   (Net ECHO 
+   (rule
+   )
+   (wire (path BOT 76200  -6750000 5742000 -7112000 5742000 -7112000 6604000
+     -4572000 6604000 -4572000 4276000 -3976000 4276000)
+    (connect (terminal pin J5-2) (terminal pin SIM1-23))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 76200  -3976000 3006000 -3556000 3006000 -3556000 3296000
+     -2650000 3296000)
+    (connect (terminal pin SIM1-18) (terminal pin J1-1))
+   )
+   )
+   (Net IN+ 
+   (rule
+   )
+   (wire (path BOT 76200  -8150000 -500000 -8150000 1625600 -8900000 1625600
+     -8900000 2050000)
+    (connect (terminal pin "IN SOLAR"-0) (terminal pin IN+-0))
+   )
+   )
+   (Net IN- 
+   (rule
+   )
+   (wire (path BOT 76200  -7642000 -500000 -7642000 -914400 -8900000 -914400
+     -8900000 450000)
+    (connect (terminal pin "IN SOLAR"-1) (terminal pin IN--0))
+   )
+   )
+   (Net IO0 
+   (rule
+   )
+   (wire (path BOT 76200  -3976000 3260000 -3759200 3260000 -3759200 3759200
+     -2438400 3759200 -2438400 2534000 -2650000 2534000)
+    (connect (terminal pin SIM1-19) (terminal pin J1-4))
+   )
+   )
+   (Net NS 
+   (rule
+   )
+   (wire (path BOT 76200  -3976000 5292000 -3657600 5292000 -3657600 4673600
+     -1422400 4673600 -1422400 1320800 304800 1320800 304800 3296000
+     -150000 3296000)
+    (connect (terminal pin SIM1-27) (terminal pin J2-1))
+   )
+   )
+   (Net OUT+ 
+   (rule
+   )
+   (wire (path BOT 76200  -5500000 2244000 -7400000 2244000 -7400000 3149600)
+    (connect (terminal pin SIM1-14) (terminal wire))
+   )
+   (wire (path BOT 76200  -7400000 3149600 -8432800 3149600 -8432800 3450000
+     -8900000 3450000)
+    (connect (terminal wire) (terminal pin OUT+-0))
+   )
+   (wire (path BOT 76200  -7400000 4199620 -7400000 3149600)
+    (connect (terminal pin J3-1) (terminal wire))
+   )
+   )
+   (Net OUT- 
+   (rule
+   )
+   (wire (path BOT 76200  -7112000 5488000 -7213600 5488000 -7213600 6705600
+     -2550000 6705600 -2550000 6200000)
+    (connect (terminal wire) (terminal pin J4-0))
+   )
+   (wire (path BOT 76200  -7112000 4470400 -7112000 5488000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 76200  -7112000 5488000 -6750000 5488000)
+    (connect (terminal wire) (terminal pin J5-3))
+   )
+   (wire (path BOT 76200  -7112000 4470400 -7112000 2498000 -5500000 2498000)
+    (connect (terminal wire) (terminal pin SIM1-13))
+   )
+   (wire (path BOT 76200  -6800000 800000 -6800000 1404388 -7666052 1404388
+     -7666052 2700000 -8900000 2700000)
+    (connect (terminal pin BAT--0) (terminal pin OUT--0))
+   )
+   (wire (path BOT 76200  -7400000 4700000 -7400000 4470400 -7112000 4470400)
+    (connect (terminal pin J3-0) (terminal wire))
+   )
+   (wire (path BOT 76200  -7400000 4700000 -9245600 4700000 -9245600 3149600
+     -8900000 3149600 -8900000 2700000)
+    (connect (terminal pin J3-0) (terminal pin OUT--0))
+   )
+   (wire (path BOT 76200  -6250000 -850000 -6250000 406400 -6800000 406400
+     -6800000 800000)
+    (connect (terminal pin "BATTERY 3.7V -"-0) (terminal pin BAT--0))
+   )
+   )
+   (Net RST 
+   (rule
+   )
+   (wire (path BOT 76200  -2650000 2788000 -2844800 2788000 -2844800 1422400
+     -2235200 1422400 -2235200 4356498 -3759200 4356498 -3759200 5038000
+     -3976000 5038000)
+    (connect (terminal pin J1-3) (terminal pin SIM1-26))
+   )
+   )
+   (Net RX 
+   (rule
+   )
+   (wire (path BOT 76200  -3976000 4784000 -4267200 4784000 -4267200 5994400
+     -3152229 5994400 -3152229 5692000 -2550000 5692000)
+    (connect (terminal pin SIM1-25) (terminal pin J4-2))
+   )
+   )
+   (Net SCK 
+   (rule
+   )
+   (wire (path BOT 76200  -5500000 5800000 -5181600 5800000 -5181600 1117600
+     508000 1117600 508000 3860800 -406400 3860800 -406400 2534000
+     -150000 2534000)
+    (connect (terminal pin SIM1-0) (terminal pin J2-4))
+   )
+   )
+   (Net SI 
+   (rule
+   )
+   (wire (path BOT 76200  -150000 3042000 203200 3042000 203200 1422400
+     -1016000 1422400 -1016000 4775200 -3556000 4775200 -3556000 5546000
+     -3976000 5546000)
+    (connect (terminal pin J2-2) (terminal pin SIM1-28))
+   )
+   )
+   (Net SO 
+   (rule
+   )
+   (wire (path BOT 76200  -150000 2788000 101600 2788000 101600 1524000
+     -609600 1524000 -609600 5041798 -3454400 5041798 -3454400 5800000
+     -3976000 5800000)
+    (connect (terminal pin J2-3) (terminal pin SIM1-29))
+   )
+   )
+   (Net TRIG 
+   (rule
+   )
+   (wire (path BOT 76200  -6750000 5996000 -7010400 5996000 -7010400 6502400
+     -4978400 6502400 -4978400 4022000 -3976000 4022000)
+    (connect (terminal pin J5-1) (terminal pin SIM1-22))
+   )
+   )
+   (Net TX 
+   (rule
+   )
+   (wire (path BOT 76200  -3976000 4530000 -4368800 4530000 -4368800 6197600
+     -2844800 6197600 -2844800 5946000 -2550000 5946000)
+    (connect (terminal pin SIM1-24) (terminal pin J4-1))
+   )
+   )
+  )
+ )
